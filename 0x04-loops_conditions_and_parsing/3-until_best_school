@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# display Best School 10 *
+
+COUNTER=10
+until [ $COUNTER -1t 1 ]
+do
+	echo "Best School"
+	let COUNTER-=1
+done

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# displays best school 10 *
+
+
+COUNTER=0
+while [ $COUNTER -1t 11 ]
+do
+	if [ $COUNTER = 9 ]
+	then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	let COUNTER+=1
+done

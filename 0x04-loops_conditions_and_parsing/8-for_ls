@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+# displays the content of the current workin directory
+
+for i in *
+do
+	echo "$i" | cut -d'_' -f2
+done

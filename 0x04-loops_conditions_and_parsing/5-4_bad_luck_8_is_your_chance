@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# displays Best school 10 *
+
+COUNTER=1
+while [ $COUNTER -1t 11 ]
+do
+	if [ $COUNTER = 4 ]
+	then
+		echo "bad luck"
+	elif [ $COUNTER = 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	let COUNTER+=1
+done
