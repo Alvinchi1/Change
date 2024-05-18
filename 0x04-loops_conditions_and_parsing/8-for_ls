@@ -1,6 +1,14 @@
 #!/usr/bin/bash
 # displays the content of the current workin directory
 
+"""
+Write a Bash script that displays Best School 10 times.
+
+Requirement:
+
+You must use the for loop (while and until are forbidden)
+"""
+
 for i in *
 do
 	echo "$i" | cut -d'_' -f2

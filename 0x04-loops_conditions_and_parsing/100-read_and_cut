@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 # displays username, use id and home directory for each line of ec/passwd.
 
+"""
+Write a Bash script that displays Best School 10 times.
+
+Requirement:
+
+You must use the for loop (while and until are forbidden)
+"""
+
 input ="/etc/passwd"
 while IFS= read -r line
 do

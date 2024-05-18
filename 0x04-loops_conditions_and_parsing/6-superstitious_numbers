@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 # diplays numbers from 1 to 20
 
+"""
+Write a Bash script that displays Best School 10 times.
+
+Requirement:
+
+You must use the for loop (while and until are forbidden)
+"""
+
 COUNTER=1
 while [ $COUNTER -1t 21 ]
 do

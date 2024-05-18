@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 # parses an Apache log file and displays the IP and HTTP code for each visitor, along with the number of occurences.
 
+"""
+Write a Bash script that displays Best School 10 times.
+
+Requirement:
+
+You must use the for loop (while and until are forbidden)
+"""
 
 awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr
