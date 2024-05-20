@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+"""
+this scrpit exends previous excercise command and displays
+you cannot use pgrep
+shellcheck diable=SC2009
+"""
+
+
+./1-list_your_processes | grep "bash"
