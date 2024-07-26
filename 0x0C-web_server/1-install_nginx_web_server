@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+# instalss, configures and starts the server
+#Imanol A
+
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo chown -R ubuntu /var/www
+echo "Hello World" > /vsr/www/html/index.nginx-debian.html
+sudo service nginx start
