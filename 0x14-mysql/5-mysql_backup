@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Dumps and archieves all MySql db
+mysldump --all-databases -u root -password="$1" > backup.api
+tar -cvzf "$(date '+%d-%m-%Y.tar.gz')" backup.sql
