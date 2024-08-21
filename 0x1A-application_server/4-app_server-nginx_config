@@ -1,0 +1,21 @@
+# Configure Nginx to serve the AirBnB_clone3 API
+
+server {
+    # Listen on port 80
+    listen      80 default_server;
+    listen      [::]:80 defualt_server ipv6only=on;
+
+    server_name 104.196.168.90;
+
+    add_header  X-Served-By 375-web-01;
+
+    location = /airbnb-onepage/ {
+	proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+    }
+
+    error_page 404 /404.html
+    location /404 {
+	root /var/www/html;
+        internal;
+    }
+}
